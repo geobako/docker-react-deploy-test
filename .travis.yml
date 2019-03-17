@@ -9,7 +9,7 @@ script:
   - docker run geobako/docker-react-deploy-test npm run test -- --coverage
 
 deploy:
-  provider: elasticbeanstack
+  provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker-react-deploy-test"
   env: "DockerReactDeployTest-env"
